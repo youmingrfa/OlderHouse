@@ -1,26 +1,23 @@
-package com.example.olderhouse;
+package com.example.olderhouse.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.method.HideReturnsTransformationMethod;
-import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.example.olderhouse.R;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private RelativeLayout mPasswordLayout;
     private TextView mForgetPsdView,mRegisterView;
     private EditText mAccountView,mPasswordView;
     private ImageView mClearAccountView, mClearPasswordView;
-    private CheckBox mEyeView;
     private Button mLoginView;
 
 

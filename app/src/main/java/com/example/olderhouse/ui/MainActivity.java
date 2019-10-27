@@ -1,13 +1,15 @@
-package com.example.olderhouse;
+package com.example.olderhouse.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ForgetPasswordActivity extends AppCompatActivity {
+import com.example.olderhouse.R;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_forget_password);
+        setContentView(R.layout.activity_main);
     }
 }
