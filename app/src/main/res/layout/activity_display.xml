@@ -22,7 +22,7 @@
         android:layout_above="@id/point"
         android:text="进入"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/shape"
+        android:background="@drawable/disply_shape"
         android:visibility="gone"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="160dp"/>
