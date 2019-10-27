@@ -5,18 +5,20 @@
 
     <LinearLayout
         android:id="@+id/ll_title_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="80dp">
+        android:orientation="vertical"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="WQ"
+            android:text="W2Q"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
             android:textColor="#000"
-            android:textSize="32sp" />
+            android:textSize="50sp" />
 
     </LinearLayout>
 
@@ -38,18 +40,18 @@
             <EditText
                 android:id="@+id/et_input_account"
                 android:layout_width="wrap_content"
-                android:layout_marginEnd="10dp"
                 android:layout_height="@dimen/input_account_edit_text_height"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_toStartOf="@+id/iv_clear_account"
+                android:textSize="20dp"
                 android:hint="@string/input_account"
                 android:inputType="number" />
 
             <ImageView
                 android:id="@+id/iv_clear_account"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
@@ -63,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_marginTop="30dp"
             android:background="@drawable/underline">
 
             <EditText
@@ -71,8 +74,8 @@
                 android:layout_height="@dimen/input_account_edit_text_height"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginEnd="10dp"
                 android:layout_toStartOf="@id/iv_clear_password"
+                android:textSize="20dp"
                 android:hint="@string/input_password"
                 android:inputType="textPassword"
                 android:longClickable="false"
@@ -80,8 +83,8 @@
 
             <ImageView
                 android:id="@+id/iv_clear_password"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_centerVertical="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
@@ -93,9 +96,11 @@
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
+            android:layout_gravity="center_horizontal"
             android:layout_height="38dp"
             android:layout_marginTop="22dp"
+
             android:text="@string/login"
             android:textColor="@android:color/white"
             android:textSize="20sp"
@@ -110,7 +115,8 @@
                 android:id="@+id/tv_forget_password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
                 android:text="@string/login_forget_password"
                 android:textColor="@drawable/bg_hypertext" />
 
@@ -119,7 +125,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
                 android:text="@string/login_register"
                 android:textColor="@drawable/bg_hypertext" />
 

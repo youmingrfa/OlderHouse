@@ -12,6 +12,7 @@
     <style name="base_textView_style">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+
     </style>
 
     <!--返回按钮的样式-->
@@ -42,7 +43,7 @@
     <style name="login_editText_style">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">@null</item>
+        <item name="android:background">@color/gray_2</item>
         <item name="android:layout_centerVertical">true</item>
         <item name="android:padding">16dp</item>
         <item name="android:scrollHorizontally">true</item>
@@ -81,12 +82,14 @@
 
     <!--登录按钮样式-->
     <style name="login_btn_style" parent="Base.Widget.AppCompat.Button">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">40dp</item>
-        <item name="android:layout_marginLeft">10dp</item>
-        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:radius">10dp</item>
+        
         <item name="android:layout_marginTop">30dp</item>
-        <item name="android:background">@drawable/round_btn_orange_self_selector</item>
+        <!--<item name="android:background">@drawable/round_btn_orange_self_selector</item>-->
+        <item name="android:background">@color/light_green</item>
         <item name="android:enabled">false</item>
         <item name="android:text">@string/login_titleBar_login</item>
         <item name="android:textColor">@color/white</item>

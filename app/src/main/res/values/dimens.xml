@@ -68,5 +68,5 @@
     <dimen name="login_quick_login_getCode_height">42dp</dimen>
     <dimen name="login_quick_login_getCode_marginRight">8dp</dimen>
     <dimen name="login_content_size">@dimen/textSize_14</dimen>
-    <dimen name="login_titleBar_login_size">@dimen/textSize_20</dimen>
+    <dimen name="login_titleBar_login_size">@dimen/textSize_29</dimen>
 </resources>
