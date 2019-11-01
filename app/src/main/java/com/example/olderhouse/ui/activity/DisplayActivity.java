@@ -1,4 +1,4 @@
-package com.example.olderhouse.ui;
+package com.example.olderhouse.ui.activity;
 
 import android.content.Intent;
 import android.support.v4.app.Fragment;
@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -31,10 +32,10 @@ public class DisplayActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_display);
 
         initView();
-
         intData();
 
     }
@@ -80,6 +81,8 @@ public class DisplayActivity extends AppCompatActivity {
                 getPoint(i);
                 if (i==2){
                     enter.setVisibility(View.VISIBLE);
+                } else{
+                    enter.setVisibility(View.GONE);
                 }
             }
 

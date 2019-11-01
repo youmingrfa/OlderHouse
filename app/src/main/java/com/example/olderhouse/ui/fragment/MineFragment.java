@@ -8,12 +8,11 @@ import android.view.ViewGroup;
 
 import com.example.olderhouse.R;
 
-public class ThirdFragment extends Fragment {
+public class MineFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_third, container, false);
-
+        View v = inflater.inflate(R.layout.fragment_mine, container, false);
 
         return v;
     }

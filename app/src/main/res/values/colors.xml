@@ -89,4 +89,5 @@
     <color name="menu_item_normal_bg">#FFFFFFFF</color>
     <color name="menu_item_press_bg">#dfdfdf</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="white_f5">#f5f5f5</color>
 </resources>
