@@ -1,4 +1,4 @@
-package com.example.olderhouse.widget;
+package com.example.olderhouse.ui.widgets;
 
 import android.content.Context;
 import android.content.res.TypedArray;

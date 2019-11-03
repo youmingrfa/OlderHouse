@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+
+    <path
+        android:fillColor="#77B3D4"
+        android:pathData="M512.324 508.576m-448.561 0a448.561 448.561 0 1 0 897.122 0 448.561 448.561 0 1
+0-897.122 0Z" />
+    <path
+        android:fillColor="#231F20"
+        android:pathData="M792.675 732.856c0 30.967-25.103 56.07-56.07 56.07H288.044c-30.967
+0-56.07-25.103-56.07-56.07V312.33c0-30.967 25.103-56.07
+56.07-56.07h448.561c30.967 0 56.07 25.103 56.07 56.07v420.526z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M231.974 361.392v343.43c0 30.966 25.103 56.07 56.07 56.07h448.561c30.967 0
+56.07-25.104 56.07-56.07v-343.43H231.974z" />
+    <path
+        android:fillColor="#231F20"
+        android:pathData="M792.675 312.33c0-30.967-25.103-56.07-56.07-56.07H288.044c-30.967 0-56.07
+25.103-56.07 56.07v84.105h560.701V312.33z" />
+    <path
+        android:fillColor="#E0E0D1"
+        android:pathData="M792.675 284.295c0-30.967-25.103-56.07-56.07-56.07H288.044c-30.967 0-56.07
+25.103-56.07 56.07V368.4h560.701v-84.105z" />
+    <path
+        android:fillColor="#E0995E"
+        android:pathData="M386.166 298.313m-28.035 0a28.035 28.035 0 1 0 56.07 0 28.035 28.035 0 1 0-56.07
+0Z" />
+    <path
+        android:fillColor="#76C2AF"
+        android:pathData="M470.272 298.313m-28.035 0a28.035 28.035 0 1 0 56.07 0 28.035 28.035 0 1 0-56.07
+0Z" />
+    <path
+        android:fillColor="#C75C5C"
+        android:pathData="M302.061 298.313m-28.035 0a28.035 28.035 0 1 0 56.07 0 28.035 28.035 0 1 0-56.07
+0Z" />
+    <path
+        android:fillColor="#4F5D73"
+        android:pathData="M288.044 452.506h168.21v252.316h-168.21z" />
+    <path
+        android:fillColor="#E0E0D1"
+        android:pathData="M512.324 452.506h224.281v28.035H512.324zM512.324
+508.576h224.281v28.035H512.324zM512.324 564.646h224.281v28.035H512.324zM512.324
+620.716h224.281v28.035H512.324zM512.324 676.786h224.281v28.035H512.324z" />
+</vector>

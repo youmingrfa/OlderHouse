@@ -368,24 +368,24 @@
 
                 <ImageView
                     android:id="@+id/login_bottom_iv_qq"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:background="@mipmap/ico_qq_accout"
                     android:layout_margin="8dp"
                     android:padding="8dp"/>
 
                 <ImageView
                     android:id="@+id/login_bottom_iv_wechat"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:background="@mipmap/ico_qq_wixin"
                     android:layout_margin="8dp"
                     android:padding="8dp"/>
 
                 <ImageView
                     android:id="@+id/login_bottom_iv_weibo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:background="@mipmap/ico_sina_weibo"
                     android:layout_margin="8dp"
                     android:padding="8dp"/>
