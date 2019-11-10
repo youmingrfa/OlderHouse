@@ -13,12 +13,14 @@ import com.example.olderhouse.R;
 import com.example.olderhouse.ui.fragment.FindFragment;
 import com.example.olderhouse.ui.fragment.HomeFragment;
 import com.example.olderhouse.ui.fragment.MineFragment;
+import com.example.olderhouse.ui.fragment.ProductFragment;
 
 public class MainActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
 
     private BottomNavigationView navigation;
     private ViewPager viewPager;
     private HomeFragment homeFragment = new HomeFragment();
+    private ProductFragment productFragment = new ProductFragment();
     private FindFragment findFragment = new FindFragment();
     private MineFragment mineFragment = new MineFragment();
 
@@ -48,8 +50,10 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
                     case 0:
                         return homeFragment;
                     case 1:
-                        return findFragment;
+                        return productFragment;
                     case 2:
+                        return findFragment;
+                    case 3:
                         return mineFragment;
                 }
                 return null;
@@ -57,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
             @Override
             public int getCount() {
-                return 3;
+                return 4;
             }
         });
     }

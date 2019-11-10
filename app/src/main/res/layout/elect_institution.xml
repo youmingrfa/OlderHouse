@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_f5">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="高级筛选"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:padding="8dp"/>
+
+    <ScrollView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_above="@id/elect_res"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收费对象"
+                    android:layout_marginStart="4dp"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <CheckBox
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:minWidth="72dp"
+                        android:button="@null"
+                        android:text="不限"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_7d"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:background="@drawable/item_selector"/>
+
+                    <CheckBox
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:minWidth="72dp"
+                        android:button="@null"
+                        android:text="自理"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_7d"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:background="@drawable/item_selector"/>
+
+                    <CheckBox
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:minWidth="72dp"
+                        android:button="@null"
+                        android:text="半自理/介助"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_7d"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:layout_marginEnd="4dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:background="@drawable/item_selector"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <CheckBox
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:minWidth="72dp"
+                        android:button="@null"
+                        android:text="不能自理/介护"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_7d"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:background="@drawable/item_selector"/>
+
+                    <CheckBox
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:gravity="center"
+                        android:minWidth="72dp"
+                        android:button="@null"
+                        android:text="特护"
+                        android:textSize="14sp"
+                        android:textColor="@color/gray_7d"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                        android:background="@drawable/item_selector"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_f5"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="机构星级"
+                    android:layout_marginStart="4dp"
+                    android:textColor="#000"
+                    android:paddingTop="8dp"/>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_f5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="价格区间（元）"
+                    android:layout_marginStart="4dp"
+                    android:textColor="#000"
+                    android:paddingTop="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_selected"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="----"/>
+
+                    <EditText
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_selected"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="指定筛选"
+                android:layout_marginStart="4dp"
+                android:textColor="#000"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="接收异地"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="医保定点"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="医养结合"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="康复训练"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="专业照护"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="营养膳食"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="接收异地"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="医保定点"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="医养结合"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="连锁品牌"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="设备完备"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+                <CheckBox
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="center"
+                    android:minWidth="72dp"
+                    android:button="@null"
+                    android:text="活动丰富"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_7d"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:background="@drawable/item_selector"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/elect_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/elect_restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重置"
+            android:textColor="#fff"
+            android:layout_toStartOf="@id/elect_sure"
+            android:background="@color/orange"/>
+
+        <Button
+            android:id="@+id/elect_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorRed"
+            android:layout_marginEnd="6dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

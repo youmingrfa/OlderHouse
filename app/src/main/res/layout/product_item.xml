@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@mipmap/institutionpic1"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="迎丰老年公寓"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:background="@color/white_f5"
+            android:layout_above="@id/renqi"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/renqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人气2"
+            android:textSize="12sp"
+            android:textColor="@color/colorRed"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:background="@color/white_f5"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

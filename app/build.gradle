@@ -12,9 +12,25 @@ android {
     }
     buildTypes {
         release {
+//            aaptOptions.cruncherEnabled = false
+//            aaptOptions.useNewCruncher = false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '28.0.0'
+                }
+            }
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
     }
 }
 
@@ -25,7 +41,12 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.android.support:design:28.0.0'
+    //加载图片
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    //轮播图
     implementation 'com.youth.banner:banner:1.4.10'
+    //下拉筛选菜单
+    implementation 'com.github.EthanCo:DropDownMenu:1.0.5'
+    implementation files('libs/AMap3DMap_6.9.2_AMapNavi_6.9.0_AMapSearch_6.9.2_AMapLocation_4.7.0_20190710.jar')
 }

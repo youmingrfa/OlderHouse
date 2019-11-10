@@ -5,9 +5,10 @@ package com.example.olderhouse.ui.utils;
  */
 public class ImageUtil {
     public final static String[] imageUrls = new String[]{
-            "http://www.cnsf99.com/olduploadfiles/1506567706.gif",
-            "http://www.cnsf99.com/olduploadfiles/1534829262.png",
-            "http://www.cnsf99.com/olduploadfiles/1534829232.png",
-            "http://www.cnsf99.com/olduploadfiles/1534829209.png"
+        "http://cnsf99.com/olduploadfiles/1487128007.png",
+            "http://cnsf99.com/filespath/images/290.png",
+            "http://cnsf99.com/olduploadfiles/1534830065.png",
+            "http://cnsf99.com/olduploadfiles/1534831877.png",
+            "http://cnsf99.com/olduploadfiles/1534832798.png"
     };
 }

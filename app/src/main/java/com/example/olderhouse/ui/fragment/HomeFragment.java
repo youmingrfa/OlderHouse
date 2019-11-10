@@ -7,8 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import com.example.olderhouse.R;
+import com.example.olderhouse.ui.activity.CheckHealthActivity;
 import com.example.olderhouse.ui.activity.InstitutionSelectActivity;
 import com.example.olderhouse.ui.widgets.BannerLoader;
 import com.youth.banner.Banner;
@@ -20,8 +22,9 @@ import static com.example.olderhouse.ui.utils.ImageUtil.imageUrls;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-    private Banner banner;
     private ImageButton institution_more;
+
+    private LinearLayout healthCheck;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -37,22 +40,17 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     }
 
     private void initView(View root){
-        banner = root.findViewById(R.id.banner);
         institution_more = root.findViewById(R.id.institution_more);
+        healthCheck = root.findViewById(R.id.health_linear);
     }
 
     private void initData(){
-        //轮播图的设置
-        banner.setImageLoader(new BannerLoader());
-        List<String> imageList = new ArrayList<>();
-        for(int i=0;i<imageUrls.length;i++)
-            imageList.add(imageUrls[i]);
-        banner.setImages(imageList);
-        banner.start();
+
     }
 
     private void initListener(){
         institution_more.setOnClickListener(this);
+        healthCheck.setOnClickListener(this);
     }
 
     @Override
@@ -61,6 +59,10 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         switch(v.getId()){
             case R.id.institution_more:
                 intent = new Intent(getContext(),InstitutionSelectActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.health_linear:
+                intent = new Intent(getContext(),CheckHealthActivity.class);
                 startActivity(intent);
                 break;
             default:
